@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --app-heading-font: 'Playfair Display', Georgia, Cambria, serif;
+    --app-body-font: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  body {
+    background-color: var(--theme-bg-app, #FDFCFB);
+    color: var(--theme-text-primary, #1C1C1C);
+    font-family: var(--app-body-font);
+    -webkit-font-smoothing: antialiased;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-serif {
+    font-family: var(--app-heading-font);
+  }
+}
+
+/* Dynamic theme helper classes */
+.theme-app-bg {
+  background-color: var(--theme-bg-app, #FDFCFB);
+}
+
+.theme-surface-bg {
+  background-color: var(--theme-bg-surface, #FFFFFF);
+}
+
+.theme-card-bg {
+  background-color: var(--theme-card-bg, #FFFFFF);
+}
+
+.theme-text-main {
+  color: var(--theme-text-primary, #1C1C1C);
+}
+
+.theme-text-muted {
+  color: var(--theme-text-secondary, #666666);
+}
+
+.theme-border {
+  border-color: var(--theme-border, #EAE8E3);
+}
+
+.theme-border-accent {
+  border-color: var(--theme-border-accent, #D4AF37);
+}
+
+.theme-accent-color {
+  color: var(--theme-accent, #D4AF37);
+}
+
+.theme-accent-bg {
+  background-color: var(--theme-accent, #D4AF37);
+}
+
+/* Custom editorial scrollbar and helper utilities */
+.editorial-gold {
+  color: var(--theme-accent, #D4AF37);
+}
+
+.bg-editorial-gold {
+  background-color: var(--theme-accent, #D4AF37);
+}
+
+.border-editorial-gold {
+  border-color: var(--theme-border-accent, #D4AF37);
+}
+
+.editorial-noir {
+  background-color: var(--theme-bg-header, #1C1C1C);
+  color: var(--theme-bg-app, #FDFCFB);
+}
+
+/* Hide scrollbar for tabs */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+

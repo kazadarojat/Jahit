@@ -1,0 +1,6 @@
+{
+  "name": "JahitPedia - Belajar Menjahit & Pola Busana",
+  "description": "Aplikasi pembelajaran menjahit pakaian interaktif lengkap dengan video tutorial, simulator jahit, panduan pemahaman pola jahit, dan asisten AI tata busana.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
